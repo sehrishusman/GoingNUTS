@@ -1,6 +1,8 @@
 # GoingNUTS
 
-Codes for project "Going NUTS: the regional impact of extreme climate events over the medium term"
+This repository includes replication codes for the project "Going NUTS: the regional impact of extreme climate events over the medium term"
+
+This replication package provides:
 
 Input files (Data preperation): 
              "final_data_population_nuts3.csv" for weather 
@@ -13,9 +15,7 @@ Output files (for data analysis)
 
 
 
-Step 1 (Optional): run do-file "prepare_data.do" 
-        prepare_data.do cleans the raw data, creates the event variables and subgroups.
+Step 1 (Optional): Run the do-file "prepare_data.do". This file cleans the raw data and creates the event variables and subgroups for further analysis.
 
-Step 2 (Analysis) : run "main_analysis.do" for main results and sectoral analysis
-       main_analysis.do runs the main analysis (Figures 1, Figure 4 and Figure 5)
+Step 2 (Analysis): run "main_analysis.do" runs the main analysis (Figures 1, Figure 4 and Figure 5)
        and also conducts sectoral analysis for all three types of events. 
