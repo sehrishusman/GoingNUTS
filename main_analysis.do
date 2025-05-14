@@ -4,8 +4,9 @@
 
 
 clear all
-cd "set the path"  // Set the path
-use "Final_data.dta", clear
+
+setroot
+use "$root/Final_data.dta", clear
 
 /*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Main ANALYSIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -326,7 +327,7 @@ restore
 */
 
 
-merge 1:1 Territory_ID year using "GVA_NACE_sector"
+merge 1:1 Territory_ID year using "$root/GVA_NACE_sector"
 keep if _merge == 3
 drop  _merge
 
