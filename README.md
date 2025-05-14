@@ -22,5 +22,6 @@ Step 2 (Analysis): run "main_analysis.do" runs the main analysis (Figures 1, Fig
 
 # Set the path
 cap ado uninstall setroot
+
 net install setroot, from("https://github.com/MileslParker/GoingNUTS")
 
