@@ -19,3 +19,8 @@ Step 1 (Optional): Run the do-file "prepare_data.do". This file cleans the raw d
 
 Step 2 (Analysis): run "main_analysis.do" runs the main analysis (Figures 1, Figure 4 and Figure 5)
        and also conducts sectoral analysis for all three types of events. 
+
+# Set the path
+cap ado uninstall setroot
+net install setroot, from("https://github.com/MileslParker/GoingNUTS")
+
