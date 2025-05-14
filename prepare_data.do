@@ -15,8 +15,7 @@ global Territory_ID Territory_ID
 
 
 ********************** Import the Data 
-cd "set the path"
-import delimited "final_data_population_nuts3.csv" // SET THE PATH
+import delimited "$root/final_data_population_nuts3.csv" // SET THE PATH
 
 ********************** Rename variables 
 rename cntr_code ${Country_ID}
@@ -380,7 +379,7 @@ label variable hotautumn_225C "Heatwave  autumn 2.25Celcius"
 
 ****** merge with macro dataset
 
-merge 1:1 Territory_ID year using "Macrodata_NUTS3.dta" // merge with macro data
+merge 1:1 Territory_ID year using "$root/Macrodata_NUTS3.dta" // merge with macro data
 *keep if _merge ==3
 drop _merge
 
